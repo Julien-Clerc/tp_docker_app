@@ -1,0 +1,19 @@
+{# templates/blogs.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des blogs</title>
+</head>
+<body>
+    <h1>Liste des blogs</h1>
+    <ul>
+        {% for blog in blogs %}
+            <li>
+                <h2>{{ blog.title }}</h2>
+                <p>{{ blog.content }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
